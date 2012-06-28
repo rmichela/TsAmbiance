@@ -12,8 +12,6 @@ public class AmbianceTask implements Runnable {
     }
 
     public void run() {
-        Bukkit.getLogger().info("Setting ambiance " + world.getTime());
-
         world.setStorm(true);
         world.setWeatherDuration(AmbiancePlugin.TICKS_PER_SECOND * SECONDS_BETWEEN_RESETS + 5);
         world.setThundering(true);
