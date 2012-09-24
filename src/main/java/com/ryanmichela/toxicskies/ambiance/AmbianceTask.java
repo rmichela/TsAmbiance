@@ -16,7 +16,7 @@ public class AmbianceTask implements Runnable {
         world.setWeatherDuration(AmbiancePlugin.TICKS_PER_SECOND * SECONDS_BETWEEN_RESETS + 5);
         world.setThundering(true);
         world.setThunderDuration(AmbiancePlugin.TICKS_PER_SECOND * SECONDS_BETWEEN_RESETS + 5);
-        world.setTime(6000 - 300); // Noon - 15 seconds of time
+        world.setTime(18000); // night
 
         if (AmbiancePlugin.getInstance().isEnabled()) {
             Bukkit.getScheduler().scheduleSyncDelayedTask(AmbiancePlugin.getInstance(), this, AmbiancePlugin.TICKS_PER_SECOND * SECONDS_BETWEEN_RESETS);
